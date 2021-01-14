@@ -1,0 +1,22 @@
+version: '3'
+services:
+  backend:
+    container_name: backend
+    build:
+      context: ./backend
+    env_file: secret.env
+    ports:
+      - 4567:80
+    volumes:
+    - ./backend:/opt/app
+  frontend:
+    stdin_open: true
+    container_name: frontend
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - 3456:3000
+    env_file: secret.env

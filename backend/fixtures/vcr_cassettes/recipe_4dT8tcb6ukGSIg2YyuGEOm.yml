@@ -1,0 +1,230 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cdn.contentful.com/spaces/kk2bw5ojx476/environments/master/entries?sys.id=4dT8tcb6ukGSIg2YyuGEOm
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Contentful-User-Agent:
+      - sdk contentful.rb/2.15.4; platform ruby/2.7.1; os Linux;
+      Authorization:
+      - Bearer 7ac531648a1b5e1dab6c18b0979f822a5aad0fe5f1109829b8a197eb2be4b84c
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - close
+      Host:
+      - cdn.contentful.com
+      User-Agent:
+      - http.rb/4.4.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '3868'
+      Access-Control-Allow-Headers:
+      - Accept,Accept-Language,Authorization,Cache-Control,Content-Length,Content-Range,Content-Type,DNT,Destination,Expires,If-Match,If-Modified-Since,If-None-Match,Keep-Alive,Last-Modified,Origin,Pragma,Range,User-Agent,X-Http-Method-Override,X-Mx-ReqToken,X-Requested-With,X-Contentful-Version,X-Contentful-Content-Type,X-Contentful-Organization,X-Contentful-Skip-Transformation,X-Contentful-User-Agent,X-Contentful-Enable-Alpha-Feature
+      Access-Control-Allow-Methods:
+      - GET,HEAD,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Etag
+      Access-Control-Max-Age:
+      - '86400'
+      Cf-Environment-Id:
+      - master
+      Cf-Environment-Uuid:
+      - 3e111988-d2b3-4647-a0a8-ed1215cbd839
+      Cf-Organization-Id:
+      - 0OxgeKaTWSWzTukWE0scEe
+      Cf-Space-Id:
+      - kk2bw5ojx476
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Contentful-Api:
+      - cda_cached
+      Etag:
+      - W/"17983516014116016828"
+      Server:
+      - Contentful
+      X-Content-Type-Options:
+      - nosniff
+      X-Contentful-Region:
+      - us-east-1
+      X-Contentful-Route:
+      - "/spaces/:space/environments/:environment/entries"
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 14 Jan 2021 11:11:10 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '126096'
+      X-Served-By:
+      - cache-hhn4080-HHN
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Contentful-Request-Id:
+      - 0546d76f-696e-4e2b-ae71-27637b70be15
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "sys": {
+            "type": "Array"
+          },
+          "total": 1,
+          "skip": 0,
+          "limit": 100,
+          "items": [
+            {
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "kk2bw5ojx476"
+                  }
+                },
+                "id": "4dT8tcb6ukGSIg2YyuGEOm",
+                "type": "Entry",
+                "createdAt": "2018-05-07T13:38:22.351Z",
+                "updatedAt": "2018-05-07T13:41:01.986Z",
+                "environment": {
+                  "sys": {
+                    "id": "master",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "revision": 2,
+                "contentType": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "ContentType",
+                    "id": "recipe"
+                  }
+                },
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "White Cheddar Grilled Cheese with Cherry Preserves & Basil",
+                "photo": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "61XHcqOBFYAYCGsKugoMYK"
+                  }
+                },
+                "calories": 788,
+                "description": "*Grilled Cheese 101*: Use delicious cheese and good quality bread; make crunchy on the outside and ooey gooey on the inside; add one or two ingredients for a flavor punch! In this case, cherry preserves serve as a sweet contrast to cheddar cheese, and basil adds a light, refreshing note. Use __mayonnaise__ on the outside of the bread to achieve the ultimate, crispy, golden-brown __grilled cheese__. Cook, relax, and enjoy!",
+                "tags": [
+                  {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Entry",
+                      "id": "3RvdyqS8408uQQkkeyi26k"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "includes": {
+            "Entry": [
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "kk2bw5ojx476"
+                    }
+                  },
+                  "id": "3RvdyqS8408uQQkkeyi26k",
+                  "type": "Entry",
+                  "createdAt": "2018-05-07T13:27:45.974Z",
+                  "updatedAt": "2018-05-07T13:27:45.974Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                    }
+                  },
+                  "revision": 1,
+                  "contentType": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "ContentType",
+                      "id": "tag"
+                    }
+                  },
+                  "locale": "en-US"
+                },
+                "fields": {
+                  "name": "vegan"
+                }
+              }
+            ],
+            "Asset": [
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "kk2bw5ojx476"
+                    }
+                  },
+                  "id": "61XHcqOBFYAYCGsKugoMYK",
+                  "type": "Asset",
+                  "createdAt": "2018-05-07T13:37:53.784Z",
+                  "updatedAt": "2018-05-07T13:37:53.784Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                    }
+                  },
+                  "revision": 1,
+                  "locale": "en-US"
+                },
+                "fields": {
+                  "title": "SKU1240 hero-374f8cece3c71f5fcdc939039e00fb96",
+                  "file": {
+                    "url": "//images.ctfassets.net/kk2bw5ojx476/61XHcqOBFYAYCGsKugoMYK/0009ec560684b37f7f7abadd66680179/SKU1240_hero-374f8cece3c71f5fcdc939039e00fb96.jpg",
+                    "details": {
+                      "size": 194737,
+                      "image": {
+                        "width": 1020,
+                        "height": 680
+                      }
+                    },
+                    "fileName": "SKU1240_hero-374f8cece3c71f5fcdc939039e00fb96.jpg",
+                    "contentType": "image/jpeg"
+                  }
+                }
+              }
+            ]
+          }
+        }
+    adapter_metadata:
+      vcr_decompressed: gzip
+  recorded_at: Thu, 14 Jan 2021 11:11:10 GMT
+recorded_with: VCR 6.0.0
