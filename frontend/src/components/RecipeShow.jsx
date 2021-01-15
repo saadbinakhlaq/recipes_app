@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import Loading from './Loading'
+import ReactMarkdown from 'react-markdown'
 
 const RecipeDetail = props => {
   const { recipe, isLoading } = props
@@ -46,7 +47,7 @@ const RecipeDetail = props => {
                 )}
               </div>
               <div className="desciption">
-                <p>{recipe.description}</p>
+                <ReactMarkdown source={recipe.description} />
               </div>
               {tags()}
             </div>
