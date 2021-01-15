@@ -38,7 +38,10 @@ const RecipeDetail = props => {
               <div>
                 {recipe.chef && recipe.chef.name && (
                   <div className="desciption">
-                    Recipe by: <b>{recipe.chef.name}</b>
+                    <p>
+                      Chef: <b>{recipe.chef.name}</b>
+                    </p>
+                    <br></br>
                   </div>
                 )}
               </div>

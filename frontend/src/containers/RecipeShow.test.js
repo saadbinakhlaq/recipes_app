@@ -1,7 +1,7 @@
 import { render, waitFor, cleanup } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import RecipeShowContainer from './containers/RecipeShowContainer';
-import * as services from './services/RecipesService'
+import RecipeShowContainer from './RecipeShowContainer';
+import * as services from '../services/RecipesService'
 
 const getRecipe = jest.spyOn(services, 'getRecipe');
 afterEach(cleanup);
