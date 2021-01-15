@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import Loading from './Loading'
+import ReactMarkdown from 'react-markdown'
 
 const RecipeDetail = props => {
   const { recipe, isLoading } = props
@@ -38,12 +39,15 @@ const RecipeDetail = props => {
               <div>
                 {recipe.chef && recipe.chef.name && (
                   <div className="desciption">
-                    Recipe by: <b>{recipe.chef.name}</b>
+                    <p>
+                      Chef: <b>{recipe.chef.name}</b>
+                    </p>
+                    <br></br>
                   </div>
                 )}
               </div>
               <div className="desciption">
-                <p>{recipe.description}</p>
+                <ReactMarkdown source={recipe.description} />
               </div>
               {tags()}
             </div>

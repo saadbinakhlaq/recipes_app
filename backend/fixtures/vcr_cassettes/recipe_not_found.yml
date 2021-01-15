@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://cdn.contentful.com/spaces/kk2bw5ojx476/environments/master/entries?sys.id=1
+    uri: https://cdn.contentful.com/spaces/test_space_id/environments/master/entries?sys.id=1
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       X-Contentful-User-Agent:
       - sdk contentful.rb/2.15.4; platform ruby/2.7.1; os Linux;
       Authorization:
-      - Bearer 7ac531648a1b5e1dab6c18b0979f822a5aad0fe5f1109829b8a197eb2be4b84c
+      - Bearer test_access_token
       Content-Type:
       - application/vnd.contentful.delivery.v1+json
       Accept-Encoding:

@@ -1,0 +1,9 @@
+development:
+  space_id: "<%= ENV['SPACE_ID'] %>"
+  access_token: "<%= ENV['ACCESS_TOKEN'] %>"
+test:
+  space_id: test_space_id
+  access_token: test_access_token
+production:
+  space_id: "<%= ENV['SPACE_ID'] %>"
+  access_token: "<%= ENV['ACCESS_TOKEN'] %>"

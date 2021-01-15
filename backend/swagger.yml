@@ -25,6 +25,11 @@ paths:
           description: "List of recipes"
           schema:
             $ref: "#/definitions/Recipes"
+        "502":
+          description: "Gateway error"
+          schema:
+            $ref: "#/definitions/GatewayError"
+
   /recipes/{recipeId}:
     get:
       tags:
@@ -46,6 +51,12 @@ paths:
             $ref: "#/definitions/Recipe"
         "404":
           description: "Recipe not found"
+          schema:
+            $ref: "#/definitions/NotFound"
+        "502":
+          description: "Gateway error"
+          schema:
+            $ref: "#/definitions/GatewayError"
 definitions:
   Recipes:
     type: "array"
@@ -67,7 +78,6 @@ definitions:
         type: "string"
     xml:
       name: "Category"
-
   Recipe:
     type: "object"
     required:
@@ -95,3 +105,15 @@ definitions:
       image:
         type: "string"
         example: "/images.de/link"
+  GatewayError:
+    type: "object"
+    properties:
+      status:
+        type: "string"
+        example: "gateway_error"
+  NotFound:
+    type: "object"
+    properties:
+      status:
+        type: "string"
+        example: "not_found"
