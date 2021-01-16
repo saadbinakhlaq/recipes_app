@@ -36,3 +36,12 @@ $ docker-compose run frontend yarn test
 ```
 $ docker-compose run backend bundle exec rspec
 ```
+
+### Application
+
+The api can be accessed from your local machine here
+http://localhost:4567/api/v1/recipes
+http://localhost:4567/api/v1/recipes/:id
+
+The frontend app can be access here
+http://localhost:3456/recipes
